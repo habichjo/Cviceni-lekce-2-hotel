@@ -55,7 +55,7 @@ public class Main {
             }
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
             String dateFrom = itemBooking.getDateFrom().format(formatter);
-            String dateTo = itemBooking.getDateFrom().format(formatter);
+            String dateTo = itemBooking.getDateTo().format(formatter);
             System.out.println(" * v období: " + "\n      od " + dateFrom + "\n      do " + dateTo);
 
             System.out.println(spaceMaker);
