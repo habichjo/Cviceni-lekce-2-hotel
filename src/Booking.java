@@ -10,8 +10,8 @@ public class Booking {
     // do 24. 7. 2021). Pobyt je buď pracovní, nebo rekreační (type of vacation).
 
     private Integer bookingId;
-    private List room = new ArrayList<>();
-    private List guests = new ArrayList<>();
+    private List<Room> room = new ArrayList<>();
+    private List<Guest> guests = new ArrayList<>();
     private LocalDate dateFrom;
     private LocalDate dateTo;
 
