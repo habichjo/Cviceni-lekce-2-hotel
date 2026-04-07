@@ -27,13 +27,13 @@ public class Main {
         guestList1.add(adelaMalikova);
         List<Room> roomList1 = new ArrayList<>();
         roomList1.add(room1);
-        Booking booking1 = new Booking(1, roomList1, guestList1, LocalDate.of(2021,7,19), LocalDate.of(2021,7,26));
+        Booking booking1 = new Booking(1, roomList1, guestList1, LocalDate.of(2021,7,19), LocalDate.of(2021,7,26), true);
         List<Guest> guestList2 = new ArrayList<>();
         guestList2.add(adelaMalikova);
         guestList2.add(janDvoracek);
         List<Room> roomList2 = new ArrayList<>();
         roomList2.add(room3);
-        Booking booking2 = new Booking(2, roomList2, guestList2, LocalDate.of(2021,9,1), LocalDate.of(2021,9,14));
+        Booking booking2 = new Booking(2, roomList2, guestList2, LocalDate.of(2021,9,1), LocalDate.of(2021,9,14), true);
 
         List<Booking> bookingList = new ArrayList<>();
         bookingList.add(booking1);

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b3e813-0656-4dd5-a408-3adac11b1008" name="Changes" comment="dateTo repaired" />
+    <list default="true" id="f8b3e813-0656-4dd5-a408-3adac11b1008" name="Changes" comment="definition of room variable and guests variable changed">
+      <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,12 +77,21 @@
       <option name="project" value="LOCAL" />
       <updated>1775421025668</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="definition of room variable and guests variable changed">
+      <option name="closed" value="true" />
+      <created>1775489669525</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775489669525</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial code" />
     <MESSAGE value="dateTo repaired" />
-    <option name="LAST_COMMIT_MESSAGE" value="dateTo repaired" />
+    <MESSAGE value="definition of room variable and guests variable changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="definition of room variable and guests variable changed" />
   </component>
 </project>
