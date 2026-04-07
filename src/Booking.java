@@ -14,13 +14,15 @@ public class Booking {
     private List<Guest> guests = new ArrayList<>();
     private LocalDate dateFrom;
     private LocalDate dateTo;
+    private Boolean isPrivate;
 
-    public Booking(Integer bookingId, List room, List guests, LocalDate dateFrom, LocalDate dateTo) {
+    public Booking(Integer bookingId, List<Room> room, List<Guest> guests, LocalDate dateFrom, LocalDate dateTo, Boolean isPrivate) {
         this.bookingId = bookingId;
         this.room = room;
         this.guests = guests;
         this.dateFrom = dateFrom;
         this.dateTo = dateTo;
+        this.isPrivate = isPrivate;
     }
 
     public Integer getBookingId() {
@@ -29,22 +31,6 @@ public class Booking {
 
     public void setBookingId(Integer bookingId) {
         this.bookingId = bookingId;
-    }
-
-    public List getRoom() {
-        return room;
-    }
-
-    public void setRoom(List room) {
-        this.room = room;
-    }
-
-    public List getGuests() {
-        return guests;
-    }
-
-    public void setGuests(List guests) {
-        this.guests = guests;
     }
 
     public LocalDate getDateFrom() {
@@ -63,4 +49,27 @@ public class Booking {
         this.dateTo = dateTo;
     }
 
+    public List<Room> getRoom() {
+        return room;
+    }
+
+    public void setRoom(List<Room> room) {
+        this.room = room;
+    }
+
+    public List<Guest> getGuests() {
+        return guests;
+    }
+
+    public void setGuests(List<Guest> guests) {
+        this.guests = guests;
+    }
+
+    public Boolean getPrivate() {
+        return isPrivate;
+    }
+
+    public void setPrivate(Boolean isPrivate) {
+        this.isPrivate = isPrivate;
+    }
 }
