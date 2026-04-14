@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b3e813-0656-4dd5-a408-3adac11b1008" name="Changes" comment="definition of room variable and guests variable changed">
+    <list default="true" id="f8b3e813-0656-4dd5-a408-3adac11b1008" name="Changes" comment="definition of room variable and guests variable changed also in booking constructor, variable isPrivate added to Booking">
+      <change afterPath="$PROJECT_DIR$/src/BookingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -23,35 +25,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "habichjo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;habichjo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/habichjo/Cviceni-lekce-2-hotel.git",
-    "accountId": "abc2ed8f-f70c-43d2-94d4-c545881e0e61"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/habichjo/Cviceni-lekce-2-hotel.git&quot;,
+    &quot;accountId&quot;: &quot;abc2ed8f-f70c-43d2-94d4-c545881e0e61&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3BwxWUdu5KcGVFnskW0AF0oYuH1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,13 +87,30 @@
       <option name="project" value="LOCAL" />
       <updated>1775489669525</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="definition of room variable and guests variable changed also in booking constructor, variable isPrivate added to Booking">
+      <option name="closed" value="true" />
+      <created>1775564428715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775564428715</updated>
+    </task>
+    <task id="LOCAL-00005" summary="definition of room variable and guests variable changed also in booking constructor, variable isPrivate added to Booking">
+      <option name="closed" value="true" />
+      <created>1775564433471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1775564433471</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial code" />
     <MESSAGE value="dateTo repaired" />
     <MESSAGE value="definition of room variable and guests variable changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="definition of room variable and guests variable changed" />
+    <MESSAGE value="definition of room variable and guests variable changed also in booking constructor, variable isPrivate added to Booking" />
+    <option name="LAST_COMMIT_MESSAGE" value="definition of room variable and guests variable changed also in booking constructor, variable isPrivate added to Booking" />
   </component>
 </project>

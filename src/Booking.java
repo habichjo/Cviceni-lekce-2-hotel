@@ -1,7 +1,9 @@
-import jdk.jshell.execution.LoaderDelegate;
-
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Collections;
 import java.util.List;
 
 public class Booking {
@@ -10,7 +12,7 @@ public class Booking {
     // do 24. 7. 2021). Pobyt je buď pracovní, nebo rekreační (type of vacation).
 
     private Integer bookingId;
-    private List<Room> room = new ArrayList<>();
+    private List<Room> rooms = new ArrayList<>();
     private List<Guest> guests = new ArrayList<>();
     private LocalDate dateFrom;
     private LocalDate dateTo;
@@ -18,7 +20,7 @@ public class Booking {
 
     public Booking(Integer bookingId, List<Room> room, List<Guest> guests, LocalDate dateFrom, LocalDate dateTo, Boolean isPrivate) {
         this.bookingId = bookingId;
-        this.room = room;
+        this.rooms = room;
         this.guests = guests;
         this.dateFrom = dateFrom;
         this.dateTo = dateTo;
@@ -49,12 +51,12 @@ public class Booking {
         this.dateTo = dateTo;
     }
 
-    public List<Room> getRoom() {
-        return room;
+    public List<Room> getRooms() {
+        return rooms;
     }
 
-    public void setRoom(List<Room> room) {
-        this.room = room;
+    public void setRooms(List<Room> rooms) {
+        this.rooms = rooms;
     }
 
     public List<Guest> getGuests() {
@@ -71,5 +73,70 @@ public class Booking {
 
     public void setPrivate(Boolean isPrivate) {
         this.isPrivate = isPrivate;
+    }
+
+    public String getBookingData(){
+        String guestString = "";
+        for (Guest itemGuests : guests) {
+            if (guestString.equals("")) {
+                guestString = itemGuests.getGuestData();
+            }
+            else {
+                guestString = guestString + ", " + itemGuests.getGuestData();
+
+            }
+        }
+        String roomString = "";
+        for (Room itemRooms : rooms)  {
+            if (roomString.equals("")) {
+            roomString = Integer.toString(itemRooms.getRoomNumber());
+        }
+            else {
+            roomString = guestString + ", " + itemRooms.getRoomNumber();
+
+            }
+        }
+        Integer guestCount = guests.size();
+        Integer roomCount = rooms.size();
+        String guestText = "";
+        String roomText = "";
+        if (guestCount == 1) {
+            guestText = "\npro hosta ";
+        }
+        else {
+            guestText = "\npro hosty ";
+        }
+        if (roomCount == 1) {
+            roomText = "\npokoje číslo ";
+        }
+        else {
+            roomText = "\npokojů číslo ";
+        }
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        String dateFrom = getDateFrom().format(formatter);
+        String dateTo = getDateTo().format(formatter);
+
+        String textRow1 = "Rezervace číslo " + bookingId;
+        String textRow2 = roomText + roomString;
+        String textRow3 = guestText + guestString;
+        String textRow4 = "\nv období od " + dateFrom + " do " + dateTo;
+
+        Set<Integer> rowSize = new HashSet<>();
+        rowSize.add(textRow1.length());
+        rowSize.add(textRow2.length());
+        rowSize.add(textRow3.length());
+        rowSize.add(textRow4.length());
+
+        Integer max = Collections.max(rowSize);
+        String markRepeater = "=".repeat(max);
+
+        String bookingData = markRepeater +
+                        "\n" + textRow1 +
+                        textRow2 +
+                        textRow3 +
+                        textRow4 +
+                        "\n" + markRepeater;
+
+        return bookingData;
     }
 }
