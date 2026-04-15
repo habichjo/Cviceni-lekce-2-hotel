@@ -43,7 +43,6 @@ public class Main {
         System.out.print(spaceMaker + " VYTIŠTĚNÍ REZERVACÍ " + spaceMaker + "\n\n");
 
         for (Booking itemBooking : bookingList) {
-            //System.out.println(itemBooking.getBookingData());
             System.out.println("Rezervace číslo " + itemBooking.getBookingId());
             List<Room> roomList = itemBooking.getRooms();
             for (Room itemRoom : roomList) {
@@ -64,7 +63,7 @@ public class Main {
             System.out.print(spaceMaker + " ZAČÁTEK VÝPISU PRO ÚKOL Z LEKCE 3 " + spaceMaker + "\n\n");
 
             BookingManager manager1 = new BookingManager();
-            manager1.setBooking(bookingList);
+            manager1.addBooking(bookingList);
 
             System.out.print("Výpis konkrétní rezervace \n");
             System.out.println(manager1.getBooking(2));
@@ -73,6 +72,14 @@ public class Main {
             System.out.println(manager1.getBooking(3));
             System.out.print("\n\n\n");
             System.out.print("Výpis všech rezervací \n");
+            System.out.println(manager1.getBookings());
+
+            System.out.println("Počet rezervací pro pracovní cestu je " + manager1.getNumberOfWorkingBookings());
+            Integer guestsCount = manager1.getGuestsCount();
+            System.out.println("Počet hostů je " + manager1.getGuestsCount());
+            System.out.println("Průměrný počet hostů ne rezervaci je " + (double)guestsCount/(double)manager1.getNumberOfBookings());
+            manager1.clearBookings();
+            System.out.print("Ověření o vymazání rezervací \n");
             System.out.println(manager1.getBookings());
 
 

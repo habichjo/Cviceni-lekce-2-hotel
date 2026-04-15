@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b3e813-0656-4dd5-a408-3adac11b1008" name="Changes" comment="definition of room variable and guests variable changed also in booking constructor, variable isPrivate added to Booking">
-      <change afterPath="$PROJECT_DIR$/src/BookingManager.java" afterDir="false" />
+    <list default="true" id="f8b3e813-0656-4dd5-a408-3adac11b1008" name="Changes" comment="First draft of BookingManager.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775564433471</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="First draft of BookingManager.java">
+      <option name="closed" value="true" />
+      <created>1776176216431</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776176216431</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -111,6 +119,17 @@
     <MESSAGE value="dateTo repaired" />
     <MESSAGE value="definition of room variable and guests variable changed" />
     <MESSAGE value="definition of room variable and guests variable changed also in booking constructor, variable isPrivate added to Booking" />
-    <option name="LAST_COMMIT_MESSAGE" value="definition of room variable and guests variable changed also in booking constructor, variable isPrivate added to Booking" />
+    <MESSAGE value="First draft of BookingManager.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="First draft of BookingManager.java" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -75,6 +75,13 @@ public class Booking {
         this.isPrivate = isPrivate;
     }
 
+    public Integer getGuestsCount() {
+        Integer guestsCount = guests.size();
+
+        return guestsCount;
+    }
+
+
     public String getBookingData(){
         String guestString = "";
         for (Guest itemGuests : guests) {
